@@ -3,7 +3,9 @@ import Frase from './components/Frase';
 import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
-
+import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
 
@@ -12,17 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      <HelloWorld></HelloWorld>
-      <Frase></Frase>
-      <SayMyName nome="Douglas"></SayMyName>
-      <SayMyName nome="Vitor"></SayMyName>
-      <SayMyName nome={nome}></SayMyName>
-      <Pessoa 
-      nome="Douglas" 
-      idade="21" 
-      profissao="Programador" 
-      foto="http://via.placeholder.com/150" 
-      ></Pessoa>
+      <h1>Testando Evento</h1>
+      <Evento numero="2"></Evento>
+      <Form></Form>
     </div>
   );
 }
