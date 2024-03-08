@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1>Testando Evento</h1>
-      <Evento numero="2"></Evento>
+      <Evento numero='1'></Evento>
       <Form></Form>
     </div>
   );

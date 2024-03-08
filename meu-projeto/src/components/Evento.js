@@ -1,13 +1,22 @@
+import Button from "./evento/Button"
+
+
 function Evento({numero}){
+   
     function meuEvento(){
-        
-        alert(`Evento funcioando ${numero}` )
+        alert("Meu primeiro evento! "+ numero)
     }
-    
+    function segundoEvento(){
+        alert(`Meu segundo evento! ${numero}`)
+    }
+
+
     return(
         <>
         <p>Clique para disparar um evento:</p>
-        <button onClick={meuEvento}>Ativar!</button>
+        <Button event={meuEvento} text="Primeiro evento"></Button>
+        <Button event={segundoEvento} text="Segundo evento"></Button>
+        
         </>
     )
 
